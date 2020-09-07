@@ -3,6 +3,14 @@ const API = {
   LOGIN: HOST + "/login",
   LOGOUT: HOST + "/logout",
   INFOPERSONAL: HOST + "/persona/informacion",
+  INSUMO: {
+    LISTAR: HOST + "/insumo",
+    EDIT: HOST + "/insumo/:id",
+  },
+  UNIDAD_MEDIDA: {
+    LISTAR: HOST + "/unidad",
+    EDIT: HOST + "/unidad/:id",
+  },
   PERSONA: {
     LISTAR: HOST + "/person",
     EDIT: HOST + "/person/:id",

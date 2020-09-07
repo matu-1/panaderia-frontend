@@ -6,7 +6,7 @@ import AssignmentIndIcon from "@material-ui/icons/AssignmentInd";
 import ShopIcon from '@material-ui/icons/Shop';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import {
-  Person as PersonView,
+  InsumoView,
   /*Dashboard as DashboardView,
   ProductList as ProductListView,
   Typography as TypographyView,
@@ -17,6 +17,7 @@ import {
   SignIn as SignInView,
   NotFound as NotFoundView, */
 } from "./views";
+import { InsumoCreateView, InsumoEditView } from "views/insumo/components";
 
 export const pages = [
   {
@@ -30,11 +31,27 @@ export const pages = [
     children: [
       {
         title: "Ficha produccion",
-        href: ROUTE_PAGE.INVITACION.LISTAR,
+        href: ROUTE_PAGE.INSUMO.LISTAR,
         icon: <AccountBoxIcon />,
-        component: PersonView,
+        component: InsumoView,
         route: [
 
+        ],
+      },
+      {
+        title: "Insumo",
+        href: ROUTE_PAGE.INSUMO.LISTAR,
+        icon: <AccountBoxIcon />,
+        component: InsumoView,
+        route: [
+          {
+            href: ROUTE_PAGE.INSUMO.CREAR,
+            component: InsumoCreateView,
+          },
+          {
+            href: ROUTE_PAGE.INSUMO.EDITAR,
+            component: InsumoEditView,
+          },
         ],
       },
     ],
@@ -45,9 +62,9 @@ export const pages = [
     children: [
       {
         title: "Proveedor",
-        href: ROUTE_PAGE.INVITACION.LISTAR,
+        href: ROUTE_PAGE.INSUMO.LISTAR,
         icon: <AssignmentIndIcon />,
-        component: PersonView,
+        component: InsumoView,
         route: [
           // {
           //   href: ROUTE_PAGE.ORGANIZACION.LISTAR_INVITADO,

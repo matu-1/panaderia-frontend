@@ -1,6 +1,11 @@
 const ROUTE_PAGE = {
   LOGIN: "/login",
   HOME: "/",
+  INSUMO: {
+    LISTAR: '/insumo',
+    CREAR: '/insumo/crear',
+    EDITAR: '/insumo/editar/:id'
+  },
   INVITACION: {
     LISTAR: "/invitacion/listar",
     CREAR: "/invitacion/crear",
