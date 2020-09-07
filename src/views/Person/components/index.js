@@ -1,0 +1,10 @@
+export { default as PersonCreate } from "./PersonCreate";
+export { default as PersonEdit } from "./PersonEdit";
+export { default as UsersTable } from "./UsersTable";
+export { default as UsersToolbar } from "./UsersToolbar";
+export { default as PersonCreateActivity} from './personActivityCreate';
+export { default as PersonActivity } from './personActivity/PersonActivity';
+export { default as PersonEstado } from './personEstado/PersonEstado';
+export { default as PersonEstadoCreate } from './personEstado/estadoCreate/EstadoCreate';
+export { default as PersonEstadoEdit } from './personEstado/estadoEdit/EstadoEdit';
+export { default as PersonAll } from './personAll/PersonAll';
